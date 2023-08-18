@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Introduction | Zaky Ghoetti</title>
+    </head>
+    <style>
+        * {
+            font-family:'Courier New', Courier, monospace;
+        }
+        
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .judul .judul2{
+            margin-left: 175px;
+            margin-right: 175px;
+            display: flex;
+        }
+        .judul .judul2 .nickname{
+            margin-left: 10px;
+        }
+        .judul .addon{
+            display: flex;
+            margin-left: auto;
+        }
+        .judul .judul2 .addon .logg img{
+            width: 20px;
+            margin-right: 5px;
+        }
+        .desc p{
+            margin-left: 175px;
+            margin-right: 175px;
+            display: block;
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 7px 7px;
+        }
+        .judul .pfp img{
+            border-radius: 50%;
+            border: 0.5pt solid grey;
+        }
+
+        .navigasi {
+            overflow: auto;
+            display: flex;
+            margin-left: 175px;
+            margin-right: 175px;
+        }
+        .navigasi button{
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
+            border-radius: 5px;
+        }
+        .menu {
+            float: left;
+            display: block;
+            border-radius: 5px;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            padding: 5px 8px;
+        }
+        .navigasi button:hover {
+            background-color: rgb(183, 183, 183);
+            color: black;
+        }
+        
+        .tabel{
+            margin-right: 175px;
+        }
+        .row{
+            float: left;
+        }
+        #row1{
+            width: 75%;
+        }
+        #row2{
+            width: 25%;
+        }
+
+        .utama {
+            display: block;
+            justify-content: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 50px;
+            margin-left: 175px;
+            overflow: auto;
+        }
+
+        .gambar .susun{
+            display: flex;
+            justify-content: space-around;
+            overflow: auto;
+        }
+        .gambar .susun img{
+            width: 180px;
+        }
+
+        .sosmed {
+            display: flex;
+            justify-content:space-around;
+            padding-top: 50px;
+        }
+        .sidecontent{
+            margin-left: 8px;
+        }
+        .sidecontent .cpacc{
+            display: block;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding-left: 5px;
+            overflow: auto;
+        }
+        .sidecontent .cpacc a{
+            color:rgb(4, 177, 91);
+        }
+        .sidecontent .cpacc a:visited{
+            color:rgb(4, 177, 91);
+        }
+
+        #nama1{
+            display:block;
+        }
+        #gambar1{
+            display:none;
+        }
+        #hobi1{
+            display:none;
+        }
+        #funfact1{
+            display:none;
+        }
+        #sosmed1{
+            display:none;
+        }
+
+        #a{
+            background-color: rgb(183, 183, 183);
+        }
+        #p{
+            background-color: transparent;
+        }
+        #h{
+            background-color: transparent;
+        }
+        #f{
+            background-color: transparent;
+        }
+        #m{
+            background-color: transparent;
+        }
+    </style>
+
+    <body>
+        <div class="judul">
+            <div class="judul2">
+                <div class="pfp">
+                    <img src="https://cdn.discordapp.com/attachments/760857664091062304/1141770971452276878/Pas_foto_1x1.jpg" width="70px" length="70px" /> 
+                </div>
+                <div class="nickname">
+                    <h1>Zaky Ghoetti</h1>
+                </div>
+                <div class="addon">
+                    <div class="logg">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiLf_amAG-sEQqf2tPyFXzQKacEUzMhK_tMA&usqp=CAU"/>
+                    </div>
+                    <div class="logg">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Bogor_Agricultural_University_%28IPB%29_symbol.svg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desc">
+            <p>
+                59th Computer Science Student at IPB University who came from Pekanbaru
+            </p>
+        </div>
+        <div class="navigasi">
+                <button onclick="showContent('nama1', 'a')"><div class="menu" id="a"><strong>About Me</strong></div></button>
+                <button onclick="showContent('gambar1', 'p')"><div class="menu" id="p"><strong>Pict</strong></div></button>
+                <button onclick="showContent('hobi1', 'h')"><div class="menu" id="h"><strong>Hobbies</strong></div></button>
+                <button onclick="showContent('funfact1', 'f')"><div class="menu" id="f"><strong>Funfact</strong></div></button>
+                <button onclick="showContent('sosmed1', 'm')"><div class="menu" id="m"><strong>More</strong></div></button>
+        </div>
+        
+        <div class="tabel">
+            <div class="row" id="row1">
+                <div class="maincontent">
+                    <div class="utama" id="nama1">
+                        <div class="nama">
+                            <h3>
+                                About Me
+                            </h3>
+                            <br>
+                            <p>
+                                Full Name&nbsp; : Muhammad Zaky Ghoetti Ananda<br>
+                                Birth Date : February 29th<br>
+                                Age &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;: 19
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="utama" id="gambar1">
+                        <div class="gambar">
+                            <h3>
+                                Pict
+                            </h3>
+                            <br>
+                            <div class="susun">
+                                <div>
+                                    <img src="https://cdn.discordapp.com/attachments/760857664091062304/1142101196304285776/pict1.jpeg"/>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.discordapp.com/attachments/760857664091062304/1142101196627267604/pict2.JPG"/>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.discordapp.com/attachments/760857664091062304/1142101195897442434/pict3.jpeg"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="utama" id="hobi1">
+                        <div class="hobi">
+                            <h3>
+                                Hobbies
+                            </h3>
+                            <br>
+                            <p>
+                                <ul>
+                                    <li>
+                                        Playing FPS game
+                                    </li>
+                                    <li>
+                                        Coding (just a little)
+                                    </li>
+                                    <li>
+                                        Badminton and futsal
+                                    </li>
+                                    <li>
+                                        idk, just let it flow
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="utama" id="funfact1">
+                        <div class="funfact">
+                            <h3>
+                                Funfact
+                            </h3>
+                            <br>
+                            <p>
+                                <ul>
+                                    <li>
+                                        It's my first html file
+                                    </li>
+                                    <li>
+                                        Scared of something horror/thriller/whatever how u said that
+                                    </li>
+                                    <li>
+                                        Just can do much thing, not good on it
+                                    </li>
+                                    <li>
+                                        Love math since elementary school
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="utama" id="sosmed1">
+                        <div class="sosmed">
+                            <div><a href="https://instagram.com/ghoetti_zky">
+                                <img src="https://seeklogo.com/images/I/instagram-new-2016-glyph-logo-84CB825424-seeklogo.com.png" width="40px" height="40px"/>
+                            </a></div>
+                            <div><a href="https://wa.me/6282172747153">
+                                <img src="https://seeklogo.com/images/W/whatsapp-logo-112413FAA7-seeklogo.com.png" width="40px" height="40px"/>
+                            </a></div>
+                            <div><a href="https://www.linkedin.com/in/muhammad-zaky-ghoetti-ananda-b94894246">
+                                <img src="https://seeklogo.com/images/L/linkedin-black-icon-logo-ECC426C572-seeklogo.com.png" width="40px" height="40px"/>
+                            </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="row2">
+                <div class="sidecontent">
+                    <div class="cpacc">
+                        <p>
+                            <strong>-> Hackerrank</strong>
+                        </p>
+                        <p>
+                            <a href="https://www.hackerrank.com/zakyghoetti">zakyghoetti</a>
+                        </p>
+                    </div><br>
+                    
+                    <div class="cpacc">
+                        <p>
+                            <strong>-> Codeforces</strong>
+                        </p>
+                        <p>
+                            <a href="https://codeforces.com/profile/cry-Lyx_139">cry-Lyx_139</a>
+                            <br>Rating: 1325 (Pupil)
+                        </p>
+                    </div><br>
+    
+                    <div class="cpacc">
+                        <p>
+                            <strong>-> TLX</strong>
+                        </p>
+                        <p>
+                            <a href="https://tlx.toki.id/profiles/ZakyGhoetti">ZakyGhoetti</a>
+                            <br>Rating: 1835
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function showContent(cont, navi){
+                document.getElementById("nama1").style.display = "none";
+                document.getElementById("gambar1").style.display = "none";
+                document.getElementById("hobi1").style.display = "none";
+                document.getElementById("funfact1").style.display = "none";
+                document.getElementById("sosmed1").style.display = "none";
+
+                document.getElementById(cont).style.display = "block";
+
+                document.getElementById("a").style.backgroundColor = "transparent";
+                document.getElementById("p").style.backgroundColor = "transparent";
+                document.getElementById("h").style.backgroundColor = "transparent";
+                document.getElementById("f").style.backgroundColor = "transparent";
+                document.getElementById("m").style.backgroundColor = "transparent";
+
+                document.getElementById(navi).style.backgroundColor = "rgb(183, 183, 183)";
+            }
+        </script>
+    </body>
+</html>
